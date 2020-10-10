@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type ="Command">
+    <Assembly>StudyRoomPlugin.dll</Assembly>
+    <ClientId>d74f561c-3614-4191-a5e1-203ed13db953</ClientId>
+    <FullClassName>StudyRoomPlugin.StartClassPlugin</FullClassName>
+    <Text>Study Rooms Plugin</Text>
+    <Description>Set new number</Description>
+    <VendorId>Shishmarev Ruslan Andreevich</VendorId>
+    <VendorDescription>InfoBIM, www.infobim.ru</VendorDescription>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+  </AddIn>
+</RevitAddIns>

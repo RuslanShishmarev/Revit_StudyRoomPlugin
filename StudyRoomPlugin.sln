@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyRoomPlugin", "StudyRoomPlugin\StudyRoomPlugin.csproj", "{CE803EB9-0A00-4067-B5AB-45476EE26218}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE803EB9-0A00-4067-B5AB-45476EE26218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE803EB9-0A00-4067-B5AB-45476EE26218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE803EB9-0A00-4067-B5AB-45476EE26218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE803EB9-0A00-4067-B5AB-45476EE26218}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F95ECFF8-6FDD-4EFC-AF76-FD951546E2A4}
+	EndGlobalSection
+EndGlobal
