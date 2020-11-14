@@ -23,7 +23,6 @@ namespace StudyRoomPlugin
 
             //Передаем все помещения и уровни в класс для отображения
             UserWindRoom userWind = new UserWindRoom(allRooms, allRoomLevel, doc);
-
             userWind.ShowDialog();
 
             return Result.Succeeded;

@@ -15,7 +15,7 @@
         <ListBox x:Name="AllRoomsView" 
                  Grid.Row="0"
                  SelectionMode="Single"
-                 SelectionChanged="GetRoomName"
+                 SelectionChanged="SetToUIRoomName"
                  HorizontalAlignment="Stretch" 
                  VerticalAlignment="Stretch"/>
         <Button x:Name="SortBtnView" Grid.Row="1"

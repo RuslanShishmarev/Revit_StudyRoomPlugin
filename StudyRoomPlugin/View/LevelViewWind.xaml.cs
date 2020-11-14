@@ -13,19 +13,19 @@ namespace StudyRoomPlugin
     /// </summary>
     public partial class LevelViewWind : Window
     {
-        List<Level> allLevels;
-        List<Room> allRooms;
+        List<Level> _allLevels;
+        List<Room> _allRooms;
         Document _doc;
         ListBox _AllRoomsView;
         public LevelViewWind(List<Level> levels, List<Room> rooms, Document doc, ListBox AllRoomsView)
         {
             InitializeComponent();
-            allLevels = levels;
-            allRooms = rooms;
+            _allLevels = levels;
+            _allRooms = rooms;
             _doc = doc;
             _AllRoomsView = AllRoomsView;
             //создаем RadioButton с уровнями и добаляем в UI
-            foreach (Level level in allLevels)
+            foreach (Level level in _allLevels)
             {
                 RadioButton checkLevel = new RadioButton();
                 checkLevel.Content = level.Name;
@@ -42,7 +42,7 @@ namespace StudyRoomPlugin
             //Объявляем новый словарь для сортировки помещений по уровням
             Dictionary<string, List<Room>> allRoomsByLevels = new Dictionary<string, List<Room>>();
 
-            foreach(Room room in allRooms)
+            foreach(Room room in _allRooms)
             {
                 string levelRoomName = room.Level.Name;
                 //Проверяем на наличие ключа по имени этажа

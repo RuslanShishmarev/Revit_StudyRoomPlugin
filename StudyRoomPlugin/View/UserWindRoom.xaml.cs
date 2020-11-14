@@ -12,23 +12,23 @@ namespace StudyRoomPlugin
     /// </summary>
     public partial class UserWindRoom : Window
     {
-        List<Room> allRooms;
-        List<Level> allLevels;
+        List<Room> _allRooms;
+        List<Level> _allLevels;
         Document _doc;
         public UserWindRoom(List<Room> rooms, List<Level> levels, Document doc)
         {
             InitializeComponent();
-            allRooms = rooms;
-            allLevels = levels;
+            _allRooms = rooms;
+            _allLevels = levels;
             _doc = doc;
             //добавляем в визуальный список помещения
-            AllRoomsView.ItemsSource = allRooms;
+            AllRoomsView.ItemsSource = _allRooms;
             AllRoomsView.DisplayMemberPath = "Name";
         }
         private void SortRoomsInProject(Object sender, EventArgs e)
         {
             //передаем окну выбора этажа и сортировки все уровни, помещения, документ и визуальный список UI для помещений
-            LevelViewWind levelWind = new LevelViewWind(allLevels, allRooms, _doc, AllRoomsView);
+            LevelViewWind levelWind = new LevelViewWind(_allLevels, _allRooms, _doc, AllRoomsView);
 
             //присваиваем новому окну положение по центру, относительно основного окна
             levelWind.Owner = this;
@@ -37,7 +37,7 @@ namespace StudyRoomPlugin
             //открываем окно выбора сортировки            
             levelWind.ShowDialog();
         }
-        void GetRoomName(object sender, SelectionChangedEventArgs args)
+        private void SetToUIRoomName(object sender, SelectionChangedEventArgs args)
         {
             //Получаем имя помещения по выбранному объекту в списке UI
             Room room = AllRoomsView.SelectedItem as Room;
